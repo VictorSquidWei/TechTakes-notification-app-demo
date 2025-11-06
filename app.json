@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "TechTakes Notify Demo",
+    "slug": "techtakes-notify-demo",
+    "scheme": "techtakesdemo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B0F1A"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B0F1A"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "demo-techtakes-notify"
+      }
+    }
+  }
+}

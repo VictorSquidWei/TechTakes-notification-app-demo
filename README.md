@@ -1,13 +1,5 @@
 # TechTakes Notify Demo (Expo Router)
 
-A minimal React Native demo that mirrors the Tech Takes dark UI style and shows:
-- **Login** (demo-only)
-- **Dashboard** with "Ultimate" plan badge and **Predictions** list
-- **Push notifications** (local) for "New Predictions Available"
-- **Settings** with notification toggles
-
-> No backend required. Any email/password logs in and tags your plan as **Ultimate**.
-
 ## Quick Start
 
 1. Install dependencies:
@@ -27,15 +19,10 @@ A minimal React Native demo that mirrors the Tech Takes dark UI style and shows:
 
 ## Key Files
 
-- `app/_layout.tsx` — Root layout (no nested NavigationContainer; uses Expo Router Stack).
-- `app/(auth)/index.tsx` — Login screen.
-- `app/(app)/_layout.tsx` — Tab navigation (Dashboard, Settings).
-- `app/(app)/dashboard.tsx` — UI for greeting, Ultimate badge, predictions, and push trigger.
-- `lib/notifications.ts` — Permissions + local notification helper.
+- `app/_layout.tsx` — Root layout .
+- `app/(app)/dashboard.tsx` — UI for predictions.
 - `components/Card.tsx` and `lib/theme.ts` — Basic card and colors to match style.
 
 ## Notes
 
-- This schedules **local** notifications for demo purposes. Swap to FCM/APNs or OneSignal for production push.
-- The "Ultimate" badge is set from the login route params; connect to your auth backend to reflect real packages.
-- UI is intentionally compact to fit phones; extend with lists/graphs as needed.
+- UI is intentionally compact to fit phones;
